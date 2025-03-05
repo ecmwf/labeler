@@ -9,7 +9,7 @@ Adds label `bug` to PR/issue no. 1 in `owner/repo` repository.
 ```yaml
 steps:
   - name: Add PR label
-    uses: ecmwf-actions/labeler@v1
+    uses: ecmwf/labeler@v1
     with:
       token: ${{ secrets.MY_TOKEN }}
       repository: owner/repo
@@ -25,7 +25,7 @@ Removes label `bug` from PR/issue no. 1 in `owner/repo` repository.
 ```yaml
 steps:
   - name: Remove PR label
-    uses: ecmwf-actions/labeler@v1
+    uses: ecmwf/labeler@v1
     with:
       token: ${{ secrets.MY_TOKEN }}
       repository: owner/repo
